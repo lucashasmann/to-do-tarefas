@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="gtarefas.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Tarefas</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cadastrousuario.html">Cadastrar Usuários</a>
+            <a href="cadastrotarefa.html">Cadastrar Tarefas</a>
+        </nav>
+    </header>
+    <main>
+        <section class="actions">
+            <button id="btnAdicionarTarefa" class="btn">Adicionar Nova Tarefa</button>
+        </section>
+
+        <section>
+            <h2>Tarefas Cadastradas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>Setor</th>
+                        <th>Prioridade</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaTarefas">
+                    <!-- Tarefas serão listadas aqui -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Modal para adicionar tarefa -->
+    <div id="modalTarefa" class="modal">
+        <div class="modal-content">
+            <h3>Adicionar Tarefa</h3>
+            <form id="formTarefa">
+                <label for="descricaoTarefa">Descrição:</label>
+                <input type="text" id="descricaoTarefa" required><br>
+                <label for="setorTarefa">Setor:</label>
+                <input type="text" id="setorTarefa" required><br>
+                <label for="prioridadeTarefa">Prioridade:</label>
+                <select id="prioridadeTarefa" required>
+                    <option value="Baixa">Baixa</option>
+                    <option value="Média">Média</option>
+                    <option value="Alta">Alta</option>
+                </select><br>
+                <button type="submit" class="btn">Salvar</button>
+                <button type="button" class="btn cancel" onclick="fecharModalTarefa()">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="tarefascript.js"></script>
+</body>
+</html>
