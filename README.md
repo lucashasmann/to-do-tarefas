@@ -54,6 +54,7 @@ Ao final da sua prova você deve fazer o **commit** comunicar o professor.
 - Um arquivo em formato *.PNG na pasta ./docs contendo o diagrama de casos de uso criado por você;
 - O back-end na pasta ./docs
 - O front-end na pasta ./web
+- Acrescente neste README as tecnologias utilizadas e um passo a passo para testar o App.
 - Atenção: Mesmo que as telas e popups / modais acima apresentem um fluxo de exibição, caso você não tenha conseguido desenvolver algum deles, procure colocar um recurso (botão, link etc.) que permita acessar as outras telas / modais / popups que você criou.
 
 ### Complementos e anexos
